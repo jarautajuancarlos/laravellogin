@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use \App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // $user=Auth::User();
+    // if($user->esAdmin()){
+    //   echo "eres usuario administrador";
+    // }else{
+    //   echo "eres usuario estudiante";
+    // }
     return view('welcome');
 });
 
